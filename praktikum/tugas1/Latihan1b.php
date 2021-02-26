@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latihan 1b</title>
+    <title>Latihan 1b 203040066</title>
 </head>
 <body>
     <table border="1" cellspacing="0" cellpadding="10">
@@ -26,10 +26,11 @@
         <tr>
             <th>Baris <?= $y; ?></th>
             <?php for ($z=1; $z<=5; $z++) : ?>
-                <td>Kolom <?= $z; ?>, Baris <?= $y ?></td>
+                <td>Baris <?= $y ?>, Kolom <?= $z; ?></td>
             <?php endfor; ?>
         </tr>
         <?php endfor; ?>
     </table>
+    <!-- 066 -->
 </body>
 </html>

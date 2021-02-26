@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latihan 1c</title>
+    <title>Latihan 1c 203040066</title>
     <style>
         h3{
             background-color: salmon;
@@ -31,5 +31,6 @@
         <?php endfor; ?>
         <br>
     <?php endfor; ?>
+    <!-- 066 -->
 </body>
 </html>
