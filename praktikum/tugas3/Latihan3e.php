@@ -93,7 +93,12 @@ $items = [
         "jumlahStok"=>584,
         "foto"=>"11.jpg"
     ]
-]
+];
+
+function ubahRupiah($angka){
+    return "Rp" . number_format($angka,2,',','.');
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -130,7 +135,7 @@ $items = [
                         <td><?= $item["nama"]; ?></td>
                         <td><?= $item["deskripsi"]; ?></td>
                         <td><?= $item["warnaDominan"]; ?></td>
-                        <td>Rp<?= number_format($item["harga"],2,',','.'); ?></td>
+                        <td><?= ubahRupiah($item["harga"]) ?></td>
                         <td><?= $item["jumlahStok"]; ?></td>
                         <td>
                             <figure class="image is-128x128">
