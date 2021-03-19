@@ -2,7 +2,7 @@
 // Imam Faraz Aditya
 // 203040066
 // github.com/imfaditya/pw2021_203040066
-// Pertemuan 6 (08-03-2021)
+// Pertemuan 7 (19-03-2021)
 // Materi hari ini adalah GET&POST
 ?>
 <!DOCTYPE html>
