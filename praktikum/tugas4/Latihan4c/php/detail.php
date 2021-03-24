@@ -17,7 +17,7 @@
     $id = $_GET["id"];
 
     // Melakukan query dengan parameter id yang diambil dari url
-    $mahasiswa = query ("SELECT * FROM furniture_items WHERE id = $id")[0];
+    $furniture = query ("SELECT * FROM furniture_items WHERE id = $id")[0];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +25,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail <?= $mahasiswa["furniture_name"];  ?></title>
+    <title>Detail <?= $furniture["furniture_name"];  ?></title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -34,20 +34,20 @@
         <div class="card">
             <div class="card-content has-text-centered">
                 <p class="mt-5 title">
-                    <?= $mahasiswa["furniture_name"];?>
+                    <?= $furniture["furniture_name"];?>
                 </p>
-                <img src="../assets/<?= $mahasiswa["picture"];  ?>" alt="">
-                <p class="subtitle pb-5 is-size-5"><?= $mahasiswa["description"];  ?></p>
+                <img src="../assets/img/<?= $furniture["picture"];  ?>" alt="">
+                <p class="subtitle pb-5 is-size-5"><?= $furniture["description"];  ?></p>
             </div>
             <footer class="card-footer is-size-4">
                 <p class="card-footer-item">
                 <span>
-                    <?= ubahRupiah($mahasiswa["price"]);?>
+                    <?= ubahRupiah($furniture["price"]);?>
                 </span>
                 </p>
                 <p class="card-footer-item">
                 <span>
-                    Stok = <?= $mahasiswa["stock_quantity"];?>
+                    Stok = <?= $furniture["stock_quantity"];?>
                 </span>
                 </p>
             </footer>

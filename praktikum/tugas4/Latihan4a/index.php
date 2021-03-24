@@ -57,7 +57,7 @@ function ubahRupiah($angka){
                         <td><?= $row["stock_quantity"]; ?></td>
                         <td>
                             <figure class="image is-128x128">
-                                <img src="assets/<?= $row["picture"]; ?>" alt="">
+                                <img src="assets/img/<?= $row["picture"]; ?>" alt="">
                             </figure>
                         </td>
                     </tr>

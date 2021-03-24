@@ -53,7 +53,7 @@ $items = query("SELECT * FROM furniture_items");
                         <td><?= $item["stock_quantity"]; ?></td>
                         <td>
                             <figure class="image is-128x128">
-                                <img src="assets/<?= $item["picture"]; ?>" alt="">
+                                <img src="assets/img/<?= $item["picture"]; ?>" alt="">
                             </figure>
                         </td>
                     </tr>
