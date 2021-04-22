@@ -1,0 +1,16 @@
+.logo img{
+    width: 320px;
+}
+
+.logo{
+    margin: auto;
+}
+
+.registrasi a{
+    color: #707070;
+    text-decoration: none;
+}
+
+.button.is-light{
+    background-color:#dddddd;
+}
