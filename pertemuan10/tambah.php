@@ -28,11 +28,11 @@ if (isset($_POST['tambah'])) {
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tambah Data Mahasiswa</title>
+  <title>Tambah Data Mobil</title>
 </head>
 
 <body>
-  <h3>Form Tambah Data Mahasiswa</h3>
+  <h3>Form Tambah Data Mobil</h3>
   <form method="post" action="">
     <ul>
       <li>
