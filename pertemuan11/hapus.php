@@ -3,7 +3,7 @@
 // 203040066
 // github.com/imfaditya/pw2021_203040066
 // Pertemuan 11 (30-04-2021)
-// Materi hari ini adalah Delete & Update Data
+// Materi pertemuan 11 adalah delete, update, dan searching data
 ?>
 <?php
 require 'functions.php';
