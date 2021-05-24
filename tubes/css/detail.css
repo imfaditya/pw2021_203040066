@@ -1,0 +1,7 @@
+.product-name{
+    margin-top: 70px;
+}
+
+.splide__slide:hover{
+    transform: scale(1.1);
+}
