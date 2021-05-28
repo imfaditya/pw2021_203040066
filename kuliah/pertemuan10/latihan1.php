@@ -7,7 +7,7 @@
 ?>
 <?php
 //Koneksi ke DB & Pilih Database
-$conn = mysqli_connect('localhost', 'root', '', 'pw_203040066');
+$conn = mysqli_connect('localhost', 'pw20066', '#Akun#203040066#', 'pw20066_pw_203040066');
 
 //Query Isi Tabel Mobil
 $result = mysqli_query($conn, "SELECT * FROM mobil");

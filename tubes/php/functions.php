@@ -7,8 +7,8 @@
 // function untuk melakukan koneksi ke database dan memilih database
 function koneksi()
 {
-    $conn = mysqli_connect("localhost", "root", "");
-    mysqli_select_db($conn, "pw_tubes_203040066");
+    $conn = mysqli_connect("localhost", "pw20066", "#Akun#203040066#");
+    mysqli_select_db($conn, "pw20066_tubes_203040066");
     return $conn;
 }
 
