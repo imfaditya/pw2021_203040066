@@ -48,7 +48,7 @@ function tambah($data)
         return false;
     }
 
-    $query = "INSERT INTO `furniture_items`( `id`, `furniture_name`, `description`, `color`, `price`, `stock_quantity`, `picture`) VALUES ('','$nama','$deskripsi','$warna','$harga','$stok','$gambar')";
+    $query = "INSERT INTO `furniture_items`( `id`, `furniture_name`, `description`, `color`, `price`, `stock_quantity`, `picture`) VALUES (NULL,'$nama','$deskripsi','$warna','$harga','$stok','$gambar')";
 
     mysqli_query($conn, $query);
     return mysqli_affected_rows($conn);
