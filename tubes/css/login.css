@@ -14,3 +14,7 @@
 .button.is-light{
     background-color:#dddddd;
 }
+
+.container{
+    padding: 20px;
+}

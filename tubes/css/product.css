@@ -1,0 +1,19 @@
+/* Searchbar */
+.search-bar{
+  padding-top: 100px;
+}
+
+.search-bar h1{
+  color: hsl(0, 0%, 30%);
+  border-bottom: 3px solid #ff9970;
+  width: fit-content;
+  padding-bottom: 3px;
+}
+/* End Searchbar */
+
+/* Footer */
+.footer{
+  margin-top: 50px;
+  background-color: hsl(0, 0%, 94%) !important;
+}
+/* End Footer */

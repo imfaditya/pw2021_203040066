@@ -11,14 +11,13 @@ $conn = mysqli_connect('localhost', 'root', '', 'pw_203040066');
 
 //Query Isi Tabel Mobil
 $result = mysqli_query($conn, "SELECT * FROM mobil");
-
 //Ubah Data ke Dalam Bentuk Array
 // $row = mysqli_fetch_row($result); // Array Numerik
 // $row = mysqli_fetch_assoc($result); // Array Associative
 // $row = mysqli_fetch_array($result); // Keduanya
 $rows = [];
 while ($row = mysqli_fetch_assoc($result)) {
-  $rows = $row;
+  $rows[] = $row;
 }
 
 //Tampung ke Variabel Mobil

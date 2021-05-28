@@ -23,19 +23,50 @@ if (isset($_GET['cari'])) {
 }
 
 ?>
-<html lang="en">
+<html lang="en" class="has-navbar-fixed-top">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Fullniture Store</title>
+    <link rel="icon" href="../assets/img/icon-browser.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bulma.min.css">
     <link rel="stylesheet" href="../css/admin.css">
 </head>
 
 <body>
+    <!-- Navbar -->
+    <section id="navbar">
+        <nav class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item">
+                        <img class="dark" src="../assets/img/logo.svg">
+                    </a>
+
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu" id="burger">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="nav-links" class="navbar-menu">
+                    <div class="navbar-end">
+                        <a href="../index.php" class="navbar-item">
+                            Home
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- End Navbar -->
+
+
+    <!-- Table -->
     <div class="container mt-5 mb-5">
         <div class="field is-grouped is-justify-content-space-between">
             <div class="field is-grouped">
@@ -66,7 +97,6 @@ if (isset($_GET['cari'])) {
                     <th>Harga</th>
                     <th>Stok</th>
                     <th>Foto</th>
-                    <th>Lihat Detail</th>
                 </tr>
             </thead>
             <tbody>
@@ -103,13 +133,13 @@ if (isset($_GET['cari'])) {
                                 <img src="../assets/img/<?= $item["picture"]; ?>" alt="">
                             </figure>
                         </td>
-                        <td><a href="detail.php?id=<?= $item["id"]; ?>">Pilih</td>
                     </tr>
                     <?php $no++; ?>
                 <?php endforeach; ?>
             </tbody>
         </table>
     </div>
+    <!-- End Table -->
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
@@ -121,6 +151,14 @@ if (isset($_GET['cari'])) {
                 "searching": false
             });
         });
+    </script>
+    <script>
+        const burgerIcon = document.querySelector('#burger');
+        const navbarMenu = document.querySelector('#nav-links');
+
+        burgerIcon.addEventListener('click', () => {
+            navbarMenu.classList.toggle('is-active');
+        })
     </script>
 
 </body>

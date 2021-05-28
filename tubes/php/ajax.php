@@ -7,13 +7,25 @@
 require 'functions.php';
 $items = cari($_GET['keyword']);
 ?>
-<div class="columns is-multiline is-variable is-8">
+<div class="columns is-multiline">
   <?php foreach ($items as $item) : ?>
-    <div class="column is-3 imageProduct mb-5 mt-5">
-      <a href="php/detail.php?id=<?= $item['id']; ?>">
-        <img src="assets/img/<?= $item['picture']; ?>">
-        <h4><?= $item['furniture_name']; ?></h4>
-        <h5><?= ubahRupiah($item['price']); ?></h5>
+    <div class="column is-3">
+      <a href="detail.php?id=<?= $item['id']; ?>">
+        <div class="card" style="border-radius: 5px;">
+          <div class="card-image">
+            <figure class="image">
+              <img style="padding: 10px;" src="../assets/img/<?= $item['picture']; ?>" alt="">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-size-6"><?= $item['furniture_name']; ?></p>
+                <p class="subtitle is-size-6"><?= ubahRupiah($item['price']); ?></p>
+              </div>
+            </div>
+          </div>
+        </div>
       </a>
     </div>
   <?php endforeach; ?>

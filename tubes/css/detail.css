@@ -1,7 +1,62 @@
-.product-name{
-    margin-top: 70px;
+/* Navbar */
+.navbar, .navbar-dropdown{
+    background-color: white;
 }
 
-.splide__slide:hover{
-    transform: scale(1.1);
+.navbar a{
+  color: hsl(0, 0%, 30%) !important;
 }
+
+.navbar-link:not(.is-arrowless)::after{
+  border-color: hsl(0, 0%, 30%);
+}
+
+@media screen and (max-width: 1023px){
+  .navbar a {
+    color: hsl(0, 0%, 30%) !important;
+  }
+
+  .navbar span{
+    color: hsl(0, 0%, 30%) !important;
+  }
+
+  .navbar.scrolled span{
+    color: hsl(0, 0%, 30%) !important;
+  }
+}
+/* End Navbar */
+
+/* Detail Product */
+.detail-product{
+  padding-top: 50px;
+}
+
+.detail-product .wrapper{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.pieces{
+  display: flex;
+}
+
+.pieces ion-icon{
+  font-size: 4rem;
+}
+
+.detail-product button{
+  background-color: #ff9970;
+  color: white;
+  font-weight: 500;
+  border: none;
+  transition: all .3s;
+}
+/* End Detail Product */
+
+/* Footer */
+.footer{
+  background-color: white !important;
+}
+/* End Footer */

@@ -1,3 +1,11 @@
 .buttonControl{
     display: flex;
 }
+
+.navbar a{
+    color: #4d4d4d;
+}
+
+.navbar a:hover{
+    color: #636363;
+}

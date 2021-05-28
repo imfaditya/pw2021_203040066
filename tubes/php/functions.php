@@ -92,6 +92,10 @@ function ubah($data)
         $gambar = $gambar_lama;
     }
 
+    if ($gambar != 'noimage.png' && $gambar != $gambar_lama) {
+        unlink('../assets/img/' . $gambar_lama);
+    }
+
     $query = "UPDATE `furniture_items` SET `id`='$id',`furniture_name`='$nama',`description`='$deskripsi',`color`='$warna',`price`='$harga',`stock_quantity`='$stok',`picture`='$gambar' WHERE id = '$id'";
 
     mysqli_query($conn, $query);
@@ -192,6 +196,15 @@ function upload()
     move_uploaded_file($tmp_file, '../assets/img/' . $nama_file_baru);
 
     return $nama_file_baru;
+}
+
+function pickRandom($keyword)
+{
+    $keyword = query("SELECT * FROM furniture_items WHERE `description` LIKE '%$keyword%'");
+    $random_pick = (rand(0, ((count($keyword)) - 1)));
+    $keyword = $keyword[$random_pick];
+
+    return $keyword;
 }
 
 ?>
