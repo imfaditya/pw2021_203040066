@@ -124,7 +124,7 @@ function registrasi($data)
     $password = password_hash($password, PASSWORD_DEFAULT);
 
     //tambah user baru
-    $query_tambah = "INSERT INTO `user` VALUES ('', '$username', '$password')";
+    $query_tambah = "INSERT INTO `user` VALUES (NULL, '$username', '$password')";
     mysqli_query($conn, $query_tambah);
 
     return mysqli_affected_rows($conn);
